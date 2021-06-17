@@ -1,15 +1,18 @@
-
 import './App.css';
-import Today from "./components/Today/Today"
-import Bot from "./components/Bot/Bot"
+import 'antd-mobile/dist/antd-mobile.css';
+import  Bot from "./views/Bot/Bot"
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-     <Today />
-     <Bot />
-    </div>
-  );
+
+class App extends React.Component{
+  render(){
+    return(
+      <div className="App">
+            <Bot />
+       </div>
+    )
+  }
 }
 
 export default App;
